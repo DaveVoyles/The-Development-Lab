@@ -188,7 +188,7 @@ main {
 .section-shell {
   margin: 0 auto;
   max-width: 1180px;
-  padding: clamp(4.5rem, 7vw, 5.75rem) 1.25rem;
+  padding: clamp(2.25rem, 3.5vw, 2.85rem) 1.25rem;
   position: relative;
 }
 
@@ -463,37 +463,37 @@ p {
   border: 1px solid var(--tdl-border);
   border-radius: 0.75rem;
   display: grid;
-  gap: 0.35rem 0.6rem;
+  gap: 0.5rem 0.7rem;
   grid-template-columns: 1fr 1fr;
-  padding: 0.75rem;
+  padding: 1rem;
 }
 
 .match-form label {
   color: var(--tdl-text-soft);
   display: grid;
-  font-size: var(--tdl-type-xs);
+  font-size: var(--tdl-type-sm);
   font-weight: 700;
-  gap: 0.1rem;
-  line-height: 1.15;
+  gap: 0.15rem;
+  line-height: 1.2;
 }
 
 .match-form select {
   appearance: none;
   background: var(--tdl-input);
   border: 1px solid var(--tdl-border);
-  border-radius: 0.3rem;
+  border-radius: 0.35rem;
   color: var(--tdl-text);
   font-size: var(--tdl-type-xs);
-  line-height: 1.1;
-  min-height: 1.4rem;
-  padding: 0.15rem 0.35rem;
+  line-height: 1.15;
+  min-height: 1.65rem;
+  padding: 0.2rem 0.4rem;
 }
 
 .match-form .button {
   grid-column: 1 / -1;
   font-size: var(--tdl-type-xs);
-  min-height: 1.5rem;
-  padding: 0.3rem 0.75rem;
+  min-height: 1.65rem;
+  padding: 0.35rem 0.85rem;
 }
 
 .match-results {
@@ -736,7 +736,7 @@ span.cat-program-partner {
   }
 
   .section-shell {
-    padding: 4.25rem 1rem;
+    padding: 2.1rem 1rem;
   }
 
   .hero {

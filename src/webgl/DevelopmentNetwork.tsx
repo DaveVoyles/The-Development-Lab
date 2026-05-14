@@ -37,7 +37,7 @@ function NetworkParticles() {
 
 export function DevelopmentNetwork() {
   return (
-    <div className="development-network">
+    <div className="development-network" aria-hidden="true">
       <Canvas camera={{ position: [0, 0, 6], fov: 72 }} dpr={[1, 1.5]}>
         <NetworkParticles />
       </Canvas>

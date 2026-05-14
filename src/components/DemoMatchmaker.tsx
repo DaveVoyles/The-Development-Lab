@@ -54,18 +54,19 @@ export function DemoMatchmaker() {
       </div>
       <div className="matchmaker-layout">
         <form className="match-form" onSubmit={submitMatch}>
-          <label>
+          <label htmlFor="match-sport">
             Sport
-            <select value={values.sport} onChange={(event) => setValues({ ...values, sport: event.target.value })}>
+            <select id="match-sport" value={values.sport} onChange={(event) => setValues({ ...values, sport: event.target.value })}>
               <option value="lacrosse">Lacrosse</option>
               <option value="football">Football</option>
               <option value="soccer">Soccer</option>
               <option value="multi-sport">Multi-sport</option>
             </select>
           </label>
-          <label>
+          <label htmlFor="match-category">
             Support needed
             <select
+              id="match-category"
               value={values.category}
               onChange={(event) => setValues({ ...values, category: event.target.value as ProviderCategory | "all" })}
             >
@@ -77,9 +78,10 @@ export function DemoMatchmaker() {
               ))}
             </select>
           </label>
-          <label>
+          <label htmlFor="match-age">
             Athlete age
             <select
+              id="match-age"
               value={values.ageGroup}
               onChange={(event) => setValues({ ...values, ageGroup: event.target.value as AgeGroup | "any" })}
             >
@@ -91,9 +93,10 @@ export function DemoMatchmaker() {
               ))}
             </select>
           </label>
-          <label>
+          <label htmlFor="match-format">
             Preferred format
             <select
+              id="match-format"
               value={values.format}
               onChange={(event) => setValues({ ...values, format: event.target.value as ProviderFormat | "any" })}
             >
@@ -105,9 +108,10 @@ export function DemoMatchmaker() {
               ))}
             </select>
           </label>
-          <label>
+          <label htmlFor="match-pace">
             Support pace
             <select
+              id="match-pace"
               value={values.supportIntensity}
               onChange={(event) => setValues({ ...values, supportIntensity: event.target.value as SupportIntensity })}
             >
@@ -118,9 +122,10 @@ export function DemoMatchmaker() {
               ))}
             </select>
           </label>
-          <label>
+          <label htmlFor="match-support-type">
             Support type
             <select
+              id="match-support-type"
               value={values.supportType}
               onChange={(event) => setValues({ ...values, supportType: event.target.value as SupportType | "any" })}
             >
@@ -132,9 +137,10 @@ export function DemoMatchmaker() {
               ))}
             </select>
           </label>
-          <label>
+          <label htmlFor="match-budget">
             Budget range
             <select
+              id="match-budget"
               value={values.budgetTier}
               onChange={(event) => setValues({ ...values, budgetTier: event.target.value as BudgetTier | "any" })}
             >
@@ -146,9 +152,9 @@ export function DemoMatchmaker() {
               ))}
             </select>
           </label>
-          <label>
+          <label htmlFor="match-goal">
             Main goal
-            <select value={values.goal} onChange={(event) => setValues({ ...values, goal: event.target.value })}>
+            <select id="match-goal" value={values.goal} onChange={(event) => setValues({ ...values, goal: event.target.value })}>
               {goals.map((goal) => (
                 <option key={goal} value={goal}>
                   {goal[0].toUpperCase() + goal.slice(1)}

@@ -19,10 +19,20 @@
   --tdl-highlight: rgba(239, 35, 60, 0.18);
   --tdl-highlight-soft: rgba(239, 35, 60, 0.08);
   --tdl-cat-sport: #e05929;
+  --tdl-cat-sport-bg: rgba(224, 89, 41, 0.18);
+  --tdl-cat-sport-border: rgba(224, 89, 41, 0.45);
   --tdl-cat-speed: #d4a017;
+  --tdl-cat-speed-bg: rgba(212, 160, 23, 0.18);
+  --tdl-cat-speed-border: rgba(212, 160, 23, 0.45);
   --tdl-cat-tutor: #2ea87a;
+  --tdl-cat-tutor-bg: rgba(46, 168, 122, 0.18);
+  --tdl-cat-tutor-border: rgba(46, 168, 122, 0.45);
   --tdl-cat-mental: #6c7de0;
+  --tdl-cat-mental-bg: rgba(108, 125, 224, 0.18);
+  --tdl-cat-mental-border: rgba(108, 125, 224, 0.45);
   --tdl-cat-partner: #c75db5;
+  --tdl-cat-partner-bg: rgba(199, 93, 181, 0.18);
+  --tdl-cat-partner-border: rgba(199, 93, 181, 0.45);
   --tdl-input: rgba(255, 255, 255, 0.06);
   --tdl-white-soft: rgba(255, 255, 255, 0.08);
   --tdl-type-xs: clamp(0.78rem, 0.75rem + 0.12vw, 0.84rem);
@@ -61,6 +71,23 @@ a {
   text-decoration: none;
 }
 
+:focus-visible {
+  outline: 2px solid var(--tdl-accent);
+  outline-offset: 2px;
+}
+
+.sr-only {
+  border: 0;
+  clip: rect(0, 0, 0, 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
 button,
 input,
 select {
@@ -97,7 +124,6 @@ select {
   transform: translateX(-50%);
   width: 100%;
   z-index: 10;
-  row-gap: 0.7rem;
 }
 
 .brand,
@@ -124,7 +150,7 @@ select {
   border-radius: 999px;
   color: var(--tdl-accent-fg);
   display: inline-flex;
-  font-size: 0.7rem;
+  font-size: var(--tdl-type-xs);
   height: 2rem;
   justify-content: center;
   letter-spacing: 0.08em;
@@ -211,7 +237,7 @@ h2 {
 }
 
 h3 {
-  font-size: clamp(1.08rem, 1vw, 1.2rem);
+  font-size: clamp(1.1rem, 1rem + 0.35vw, 1.3rem);
   letter-spacing: -0.03em;
   line-height: 1.3;
   margin-bottom: 0.65rem;
@@ -342,6 +368,7 @@ p {
   background: var(--tdl-panel);
   border: 1px solid var(--tdl-border);
   border-radius: 1rem;
+  min-width: 0;
   box-shadow: 0 0 2px var(--tdl-white-soft);
   padding: var(--tdl-card-padding);
   transition:
@@ -502,7 +529,8 @@ p {
   color: var(--tdl-accent);
   font-size: clamp(1rem, 0.9rem + 0.35vw, 1.12rem);
   line-height: 1.25;
-  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
 .match-card ul {
@@ -548,7 +576,7 @@ p {
 
 .tag-row {
   flex-wrap: wrap;
-  gap: 0.55rem;
+  gap: 0.6rem;
   margin-top: 0.95rem;
 }
 
@@ -574,36 +602,36 @@ p {
 /* Category color coding */
 .filter-row button[data-cat="sport-specific"],
 .cat-sport-specific {
-  background: rgba(224, 89, 41, 0.18);
-  border-color: rgba(224, 89, 41, 0.45);
+  background: var(--tdl-cat-sport-bg);
+  border-color: var(--tdl-cat-sport-border);
   color: var(--tdl-cat-sport);
 }
 
 .filter-row button[data-cat="speed-strength"],
 .cat-speed-strength {
-  background: rgba(212, 160, 23, 0.18);
-  border-color: rgba(212, 160, 23, 0.45);
+  background: var(--tdl-cat-speed-bg);
+  border-color: var(--tdl-cat-speed-border);
   color: var(--tdl-cat-speed);
 }
 
 .filter-row button[data-cat="tutoring"],
 .cat-tutoring {
-  background: rgba(46, 168, 122, 0.18);
-  border-color: rgba(46, 168, 122, 0.45);
+  background: var(--tdl-cat-tutor-bg);
+  border-color: var(--tdl-cat-tutor-border);
   color: var(--tdl-cat-tutor);
 }
 
 .filter-row button[data-cat="mental-performance"],
 .cat-mental-performance {
-  background: rgba(108, 125, 224, 0.18);
-  border-color: rgba(108, 125, 224, 0.45);
+  background: var(--tdl-cat-mental-bg);
+  border-color: var(--tdl-cat-mental-border);
   color: var(--tdl-cat-mental);
 }
 
 .filter-row button[data-cat="program-partner"],
 .cat-program-partner {
-  background: rgba(199, 93, 181, 0.18);
-  border-color: rgba(199, 93, 181, 0.45);
+  background: var(--tdl-cat-partner-bg);
+  border-color: var(--tdl-cat-partner-border);
   color: var(--tdl-cat-partner);
 }
 
@@ -645,36 +673,36 @@ p {
 /* Category color inheritance for tags inside cards */
 .provider-card[data-cat="sport-specific"] .tag-row small,
 .match-card[data-cat="sport-specific"] .tag-row small {
-  background: rgba(224, 89, 41, 0.12);
-  border-color: rgba(224, 89, 41, 0.35);
+  background: var(--tdl-cat-sport-bg);
+  border-color: var(--tdl-cat-sport-border);
   color: var(--tdl-cat-sport);
 }
 
 .provider-card[data-cat="speed-strength"] .tag-row small,
 .match-card[data-cat="speed-strength"] .tag-row small {
-  background: rgba(212, 160, 23, 0.12);
-  border-color: rgba(212, 160, 23, 0.35);
+  background: var(--tdl-cat-speed-bg);
+  border-color: var(--tdl-cat-speed-border);
   color: var(--tdl-cat-speed);
 }
 
 .provider-card[data-cat="tutoring"] .tag-row small,
 .match-card[data-cat="tutoring"] .tag-row small {
-  background: rgba(46, 168, 122, 0.12);
-  border-color: rgba(46, 168, 122, 0.35);
+  background: var(--tdl-cat-tutor-bg);
+  border-color: var(--tdl-cat-tutor-border);
   color: var(--tdl-cat-tutor);
 }
 
 .provider-card[data-cat="mental-performance"] .tag-row small,
 .match-card[data-cat="mental-performance"] .tag-row small {
-  background: rgba(108, 125, 224, 0.12);
-  border-color: rgba(108, 125, 224, 0.35);
+  background: var(--tdl-cat-mental-bg);
+  border-color: var(--tdl-cat-mental-border);
   color: var(--tdl-cat-mental);
 }
 
 .provider-card[data-cat="program-partner"] .tag-row small,
 .match-card[data-cat="program-partner"] .tag-row small {
-  background: rgba(199, 93, 181, 0.12);
-  border-color: rgba(199, 93, 181, 0.35);
+  background: var(--tdl-cat-partner-bg);
+  border-color: var(--tdl-cat-partner-border);
   color: var(--tdl-cat-partner);
 }
 
@@ -768,7 +796,7 @@ p {
   }
 
   .button {
-    font-size: 0.9rem;
+    font-size: var(--tdl-type-sm);
     padding-inline: 1rem;
   }
 
@@ -789,5 +817,39 @@ p {
 
   .timeline-card {
     min-height: 0;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  .button,
+  .feature-card,
+  .provider-card,
+  .match-card,
+  .step-card,
+  .timeline-card,
+  .contact-card {
+    transition: none;
+  }
+
+  .button:hover,
+  .feature-card:hover,
+  .provider-card:hover,
+  .match-card:hover,
+  .step-card:hover,
+  .timeline-card:hover,
+  .contact-card:hover {
+    transform: none;
+  }
+
+  .match-results-active .match-card {
+    animation: none;
+  }
+
+  .development-network {
+    display: none;
   }
 }

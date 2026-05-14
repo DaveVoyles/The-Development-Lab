@@ -3,8 +3,8 @@ import { pillars } from "../data/siteContent";
 export function FourPillars() {
   return (
     <section className="section-shell" id="pillars">
-      <p className="eyebrow">The four pillars</p>
       <div className="section-heading">
+        <p className="eyebrow">The four pillars</p>
         <h2>One platform for the full youth athlete development journey.</h2>
         <p>
           The Development Lab connects performance, academics, and mindset instead of forcing families to piece it

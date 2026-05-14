@@ -420,6 +420,11 @@ p {
   max-width: 1180px;
 }
 
+.matchmaker .section-heading p {
+  font-size: var(--tdl-type-sm);
+  line-height: 1.55;
+}
+
 .matchmaker-layout {
   grid-template-columns: 0.8fr 1.2fr;
   margin-top: 1.75rem;
@@ -430,29 +435,35 @@ p {
   border: 1px solid var(--tdl-border);
   border-radius: 1rem;
   display: grid;
-  gap: 1rem;
+  gap: 0.7rem;
   padding: var(--tdl-card-padding);
 }
 
 .match-form label {
   color: var(--tdl-text-soft);
   display: grid;
-  font-size: var(--tdl-type-sm);
+  font-size: var(--tdl-type-xs);
   font-weight: 800;
-  gap: 0.5rem;
-  line-height: 1.35;
+  gap: 0.3rem;
+  line-height: 1.3;
 }
 
 .match-form select {
   appearance: none;
   background: var(--tdl-input);
   border: 1px solid var(--tdl-border);
-  border-radius: 0.8rem;
+  border-radius: 0.6rem;
   color: var(--tdl-text);
-  font-size: var(--tdl-type-base);
-  line-height: 1.35;
-  min-height: var(--tdl-control-height);
-  padding: 0.7rem 0.95rem;
+  font-size: var(--tdl-type-sm);
+  line-height: 1.3;
+  min-height: 2.15rem;
+  padding: 0.4rem 0.7rem;
+}
+
+.match-form .button {
+  font-size: var(--tdl-type-sm);
+  min-height: 2.25rem;
+  padding: 0.5rem 1rem;
 }
 
 .match-results {
@@ -528,7 +539,11 @@ p {
 }
 
 .provider-card h3 {
-  margin-top: 0.9rem;
+  margin-top: 0.65rem;
+}
+
+.match-card > div:first-child span {
+  margin-bottom: 0.35rem;
 }
 
 .tag-row {

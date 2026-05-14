@@ -601,35 +601,35 @@ p {
 
 /* Category color coding */
 .filter-row button[data-cat="sport-specific"],
-.cat-sport-specific {
+span.cat-sport-specific {
   background: var(--tdl-cat-sport-bg);
   border-color: var(--tdl-cat-sport-border);
   color: var(--tdl-cat-sport);
 }
 
 .filter-row button[data-cat="speed-strength"],
-.cat-speed-strength {
+span.cat-speed-strength {
   background: var(--tdl-cat-speed-bg);
   border-color: var(--tdl-cat-speed-border);
   color: var(--tdl-cat-speed);
 }
 
 .filter-row button[data-cat="tutoring"],
-.cat-tutoring {
+span.cat-tutoring {
   background: var(--tdl-cat-tutor-bg);
   border-color: var(--tdl-cat-tutor-border);
   color: var(--tdl-cat-tutor);
 }
 
 .filter-row button[data-cat="mental-performance"],
-.cat-mental-performance {
+span.cat-mental-performance {
   background: var(--tdl-cat-mental-bg);
   border-color: var(--tdl-cat-mental-border);
   color: var(--tdl-cat-mental);
 }
 
 .filter-row button[data-cat="program-partner"],
-.cat-program-partner {
+span.cat-program-partner {
   background: var(--tdl-cat-partner-bg);
   border-color: var(--tdl-cat-partner-border);
   color: var(--tdl-cat-partner);

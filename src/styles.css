@@ -405,10 +405,15 @@ p {
   background: var(--tdl-accent);
   border-radius: 999px;
   box-shadow: 0 0 36px var(--tdl-highlight);
-  display: block;
+  display: inline-block;
+  flex-shrink: 0;
   height: 0.75rem;
-  margin-bottom: 1.25rem;
   width: 0.75rem;
+}
+
+.feature-card h3 {
+  display: inline;
+  margin-left: 0.5rem;
 }
 
 .opportunity,

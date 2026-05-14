@@ -24,23 +24,23 @@ export const pillars = [
 export const roadmap = [
   {
     phase: "Phase 1",
-    title: "Idea Validation",
-    body: "Launch the brand, test demand, collect athlete and family signals, and build the first provider network."
+    title: "Static MVP & Signal Capture",
+    body: "Use this proof-of-concept to validate family needs, provider supply, investor interest, and the categories with the strongest pull."
   },
   {
     phase: "Phase 2",
-    title: "Marketplace Launch",
-    body: "Add deeper profiles, intake flows, matching, scheduling, messaging, and payments for live marketplace activity."
+    title: "Pilot Marketplace",
+    body: "Run controlled pilots with vetted providers, guided matching, inquiry workflows, scheduling handoffs, and early conversion metrics."
   },
   {
     phase: "Phase 3",
-    title: "Proprietary Platform",
-    body: "Build athlete development scoring, smart recommendations, and data infrastructure that become hard to copy."
+    title: "Operating System",
+    body: "Add accounts, payments, subscriptions, program dashboards, provider tools, and repeatable playbooks for new communities."
   },
   {
     phase: "Phase 4",
-    title: "Scale & Expansion",
-    body: "Expand by sport, geography, partner programs, recruiting analytics, injury prevention, and AI training plans."
+    title: "Data Moat & Expansion",
+    body: "Compound intake data, provider performance signals, athlete-development pathways, and partner integrations into a defensible network."
   }
 ];
 
@@ -59,12 +59,52 @@ export const audiencePaths = [
     title: "For Programs",
     body: "Extend your athlete support system without building every service in-house.",
     cta: "Explore Partnerships"
+  },
+  {
+    title: "For Investors & Advisors",
+    body: "Review the thesis, pilot roadmap, business model, and the metrics this MVP is designed to prove.",
+    cta: "Discuss the Pitch"
   }
 ];
 
 export const marketStats = [
   { value: "$40B", label: "current youth sports market" },
   { value: "$70B", label: "projected market by 2030" },
-  { value: "4", label: "connected athlete-development pillars" }
+  { value: "4", label: "fragmented spend categories unified" }
 ];
 
+export const businessModels = [
+  {
+    title: "Marketplace Take-Rate",
+    body: "A percentage of booked sessions once scheduling and payments are live, aligned with successful family-provider matches."
+  },
+  {
+    title: "Provider Subscription",
+    body: "Paid profiles, lead management, analytics, and reputation tools for specialists who want higher-intent local demand."
+  },
+  {
+    title: "Program Partnerships",
+    body: "Licensing and partnership packages for clubs, schools, and academies that need an external athlete-support layer."
+  }
+];
+
+export const proofPoints = [
+  { value: "MVP", label: "static proof-of-concept, not yet a live marketplace" },
+  { value: "3", label: "revenue paths ready for pilot validation" },
+  { value: "0", label: "live transactions claimed before pilots begin" }
+];
+
+export const moatPoints = [
+  {
+    title: "Intake Data",
+    body: "Structured family goals, sport needs, budget, and support gaps can become proprietary matching signal over time."
+  },
+  {
+    title: "Provider Quality Graph",
+    body: "Vetted supply, outcomes feedback, availability, and category depth can improve recommendations as the network grows."
+  },
+  {
+    title: "Program Distribution",
+    body: "Clubs, schools, and academies can create repeatable channels that are harder to replicate than one-off lead generation."
+  }
+];

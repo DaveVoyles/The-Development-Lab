@@ -5,10 +5,10 @@ export function RoadmapSection() {
     <section className="section-shell roadmap" id="roadmap">
       <div className="section-heading">
         <p className="eyebrow">Roadmap</p>
-        <h2>Starting simple. Building toward a full service ecosystem.</h2>
+        <h2>Milestones that prove demand before scaling the marketplace.</h2>
         <p>
-          The first release validates demand and tells the story. Later phases can add accounts, booking, payments,
-          recommendations, and athlete intelligence.
+          This release is intentionally honest: a static MVP and pitch asset first, then pilot workflows, monetization
+          tests, and product infrastructure only after demand and supply quality are measured.
         </p>
       </div>
       <div className="timeline">
@@ -23,4 +23,3 @@ export function RoadmapSection() {
     </section>
   );
 }
-

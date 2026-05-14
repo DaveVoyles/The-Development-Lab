@@ -3,6 +3,7 @@ import { AudiencePaths } from "./components/AudiencePaths";
 import { ContactSection } from "./components/ContactSection";
 import { DemoMatchmaker } from "./components/DemoMatchmaker";
 import { FourPillars } from "./components/FourPillars";
+import { InvestorPitchSection } from "./components/InvestorPitchSection";
 import { MarketOpportunity } from "./components/MarketOpportunity";
 import { ProviderNetwork } from "./components/ProviderNetwork";
 import { RoadmapSection } from "./components/RoadmapSection";
@@ -15,6 +16,7 @@ const sections = [
   { id: "pillars", label: "Pillars" },
   { id: "matchmaker", label: "Matchmaker" },
   { id: "providers", label: "Providers" },
+  { id: "pitch", label: "Pitch" },
   { id: "roadmap", label: "Roadmap" },
   { id: "contact", label: "Contact" }
 ];
@@ -41,18 +43,18 @@ export function App() {
 
       <main>
         <section className="hero section-shell" id="home">
-          <p className="eyebrow">Whole-athlete development marketplace</p>
-          <h1>Build the complete athlete.</h1>
+          <p className="eyebrow">Whole-athlete development marketplace · Static MVP</p>
+          <h1>The trusted matching layer for youth athlete development.</h1>
           <p className="hero-copy">
-            Training, tutoring, and mindset support in one place, matched around each athlete&apos;s goals, needs,
-            location, and budget.
+            Families need more than referrals. The Development Lab brings training, tutoring, and mindset support into
+            one pre-live marketplace concept designed to validate demand, provider supply, and partner pilots.
           </p>
           <div className="hero-actions">
             <a className="button button-primary" href="#matchmaker">
               Find Your Match
             </a>
-            <a className="button button-secondary" href="#pillars">
-              Explore the Four Pillars
+            <a className="button button-secondary" href="#pitch">
+              Investor & Pilot Pitch
             </a>
           </div>
           <div className="hero-strip">
@@ -65,6 +67,7 @@ export function App() {
 
         <FourPillars />
         <MarketOpportunity />
+        <InvestorPitchSection />
         <section className="section-shell split-section" id="how-it-works">
           <div>
             <p className="eyebrow">How matching works</p>
@@ -95,4 +98,3 @@ export function App() {
     </>
   );
 }
-

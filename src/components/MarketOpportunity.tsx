@@ -4,11 +4,12 @@ export function MarketOpportunity() {
   return (
     <section className="section-shell opportunity" id="opportunity">
       <div>
-        <p className="eyebrow">Why it matters</p>
-        <h2>Youth development works best when the whole athlete is supported.</h2>
+        <p className="eyebrow">Market opportunity</p>
+        <h2>Families already spend across the athlete journey. The workflow is still fragmented.</h2>
         <p>
-          Families rely on word of mouth to find trusted help. Providers spend energy chasing the right clients. The
-          Development Lab bridges that gap with a clearer, more personalized way to connect.
+          Training, tutoring, and mental-performance support are usually found through scattered referrals, DMs, and
+          spreadsheets. The Development Lab packages that demand into a focused marketplace thesis: help families choose
+          trusted support while giving providers and programs a better channel for high-intent matches.
         </p>
       </div>
       <div className="stat-grid">
@@ -22,4 +23,3 @@ export function MarketOpportunity() {
     </section>
   );
 }
-

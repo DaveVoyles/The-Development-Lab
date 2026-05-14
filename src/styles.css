@@ -670,42 +670,6 @@ p {
   border-color: var(--tdl-cat-partner);
 }
 
-/* Category color inheritance for tags inside cards */
-.provider-card[data-cat="sport-specific"] .tag-row small,
-.match-card[data-cat="sport-specific"] .tag-row small {
-  background: var(--tdl-cat-sport-bg);
-  border-color: var(--tdl-cat-sport-border);
-  color: var(--tdl-cat-sport);
-}
-
-.provider-card[data-cat="speed-strength"] .tag-row small,
-.match-card[data-cat="speed-strength"] .tag-row small {
-  background: var(--tdl-cat-speed-bg);
-  border-color: var(--tdl-cat-speed-border);
-  color: var(--tdl-cat-speed);
-}
-
-.provider-card[data-cat="tutoring"] .tag-row small,
-.match-card[data-cat="tutoring"] .tag-row small {
-  background: var(--tdl-cat-tutor-bg);
-  border-color: var(--tdl-cat-tutor-border);
-  color: var(--tdl-cat-tutor);
-}
-
-.provider-card[data-cat="mental-performance"] .tag-row small,
-.match-card[data-cat="mental-performance"] .tag-row small {
-  background: var(--tdl-cat-mental-bg);
-  border-color: var(--tdl-cat-mental-border);
-  color: var(--tdl-cat-mental);
-}
-
-.provider-card[data-cat="program-partner"] .tag-row small,
-.match-card[data-cat="program-partner"] .tag-row small {
-  background: var(--tdl-cat-partner-bg);
-  border-color: var(--tdl-cat-partner-border);
-  color: var(--tdl-cat-partner);
-}
-
 .contact-card {
   background:
     radial-gradient(circle at top right, var(--tdl-highlight), transparent 18rem),

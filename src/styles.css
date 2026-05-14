@@ -18,6 +18,11 @@
   --tdl-panel-strong: rgba(15, 15, 15, 0.96);
   --tdl-highlight: rgba(239, 35, 60, 0.18);
   --tdl-highlight-soft: rgba(239, 35, 60, 0.08);
+  --tdl-cat-sport: #e05929;
+  --tdl-cat-speed: #d4a017;
+  --tdl-cat-tutor: #2ea87a;
+  --tdl-cat-mental: #6c7de0;
+  --tdl-cat-partner: #c75db5;
   --tdl-input: rgba(255, 255, 255, 0.06);
   --tdl-white-soft: rgba(255, 255, 255, 0.08);
   --tdl-type-xs: clamp(0.78rem, 0.75rem + 0.12vw, 0.84rem);
@@ -542,12 +547,84 @@ p {
 }
 
 .timeline {
+  gap: 2.5rem;
   grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
   margin-top: 1.75rem;
 }
 
 .timeline-card {
   min-height: 210px;
+}
+
+/* Category color coding */
+.filter-row button[data-cat="sport-specific"],
+.cat-sport-specific {
+  background: rgba(224, 89, 41, 0.18);
+  border-color: rgba(224, 89, 41, 0.45);
+  color: var(--tdl-cat-sport);
+}
+
+.filter-row button[data-cat="speed-strength"],
+.cat-speed-strength {
+  background: rgba(212, 160, 23, 0.18);
+  border-color: rgba(212, 160, 23, 0.45);
+  color: var(--tdl-cat-speed);
+}
+
+.filter-row button[data-cat="tutoring"],
+.cat-tutoring {
+  background: rgba(46, 168, 122, 0.18);
+  border-color: rgba(46, 168, 122, 0.45);
+  color: var(--tdl-cat-tutor);
+}
+
+.filter-row button[data-cat="mental-performance"],
+.cat-mental-performance {
+  background: rgba(108, 125, 224, 0.18);
+  border-color: rgba(108, 125, 224, 0.45);
+  color: var(--tdl-cat-mental);
+}
+
+.filter-row button[data-cat="program-partner"],
+.cat-program-partner {
+  background: rgba(199, 93, 181, 0.18);
+  border-color: rgba(199, 93, 181, 0.45);
+  color: var(--tdl-cat-partner);
+}
+
+.filter-row button[data-cat].active,
+.filter-row button[data-cat]:hover {
+  color: var(--tdl-accent-fg);
+}
+
+.filter-row button[data-cat="sport-specific"].active,
+.filter-row button[data-cat="sport-specific"]:hover {
+  background: var(--tdl-cat-sport);
+  border-color: var(--tdl-cat-sport);
+}
+
+.filter-row button[data-cat="speed-strength"].active,
+.filter-row button[data-cat="speed-strength"]:hover {
+  background: var(--tdl-cat-speed);
+  border-color: var(--tdl-cat-speed);
+}
+
+.filter-row button[data-cat="tutoring"].active,
+.filter-row button[data-cat="tutoring"]:hover {
+  background: var(--tdl-cat-tutor);
+  border-color: var(--tdl-cat-tutor);
+}
+
+.filter-row button[data-cat="mental-performance"].active,
+.filter-row button[data-cat="mental-performance"]:hover {
+  background: var(--tdl-cat-mental);
+  border-color: var(--tdl-cat-mental);
+}
+
+.filter-row button[data-cat="program-partner"].active,
+.filter-row button[data-cat="program-partner"]:hover {
+  background: var(--tdl-cat-partner);
+  border-color: var(--tdl-cat-partner);
 }
 
 .contact-card {

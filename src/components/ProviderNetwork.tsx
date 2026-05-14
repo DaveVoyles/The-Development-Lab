@@ -25,6 +25,7 @@ export function ProviderNetwork() {
         {Object.entries(categoryLabels).map(([value, label]) => (
           <button
             className={category === value ? "active" : ""}
+            data-cat={value}
             key={value}
             onClick={() => setCategory(value as ProviderCategory)}
             type="button"
@@ -36,7 +37,7 @@ export function ProviderNetwork() {
       <div className="provider-grid">
         {filteredProviders.map((provider) => (
           <article className="provider-card" key={provider.id}>
-            <span>{categoryLabels[provider.category]}</span>
+            <span className={`cat-${provider.category}`}>{categoryLabels[provider.category]}</span>
             <h3>{provider.name}</h3>
             <p>{provider.location}</p>
             <div className="tag-row">

@@ -166,7 +166,7 @@ export function DemoMatchmaker() {
           {matches.map((match) => (
             <article className="match-card" key={match.id}>
               <div>
-                <span>{categoryLabels[match.category]}</span>
+                <span className={`cat-${match.category}`}>{categoryLabels[match.category]}</span>
                 <h3>{match.name}</h3>
               </div>
               <strong>{match.score}% fit</strong>

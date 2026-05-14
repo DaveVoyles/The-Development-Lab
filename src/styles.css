@@ -198,9 +198,9 @@ main {
   flex-direction: column;
   gap: 0.2rem;
   justify-content: center;
-  min-height: 84vh;
-  padding-bottom: 1.25rem;
-  padding-top: 7.25rem;
+  min-height: 42vh;
+  padding-bottom: 0.6rem;
+  padding-top: 3.6rem;
 }
 
 .eyebrow {
@@ -713,8 +713,8 @@ span.cat-program-partner {
   }
 
   .hero {
-    min-height: 82vh;
-    padding-top: 8.25rem;
+    min-height: 41vh;
+    padding-top: 4.1rem;
   }
 
   .card-grid,
@@ -745,8 +745,8 @@ span.cat-program-partner {
   }
 
   .hero {
-    min-height: 80vh;
-    padding-top: 9.25rem;
+    min-height: 40vh;
+    padding-top: 4.6rem;
   }
 
   h1 {

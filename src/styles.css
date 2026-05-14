@@ -199,6 +199,7 @@ main {
   gap: 0.2rem;
   justify-content: center;
   min-height: 84vh;
+  padding-bottom: 1.25rem;
   padding-top: 7.25rem;
 }
 
@@ -339,6 +340,10 @@ p {
   max-width: 790px;
 }
 
+.section-heading h3 {
+  margin-top: 2rem;
+}
+
 .card-grid,
 .audience-grid,
 .provider-grid,
@@ -463,9 +468,9 @@ p {
   border: 1px solid var(--tdl-border);
   border-radius: 0.75rem;
   display: grid;
-  gap: 0.5rem 0.7rem;
+  gap: 0.65rem 0.8rem;
   grid-template-columns: 1fr 1fr;
-  padding: 1rem;
+  padding: 1.25rem;
 }
 
 .match-form label {
@@ -473,8 +478,8 @@ p {
   display: grid;
   font-size: var(--tdl-type-sm);
   font-weight: 700;
-  gap: 0.15rem;
-  line-height: 1.2;
+  gap: 0.2rem;
+  line-height: 1.25;
 }
 
 .match-form select {
@@ -484,16 +489,16 @@ p {
   border-radius: 0.35rem;
   color: var(--tdl-text);
   font-size: var(--tdl-type-xs);
-  line-height: 1.15;
-  min-height: 1.65rem;
-  padding: 0.2rem 0.4rem;
+  line-height: 1.2;
+  min-height: 1.85rem;
+  padding: 0.25rem 0.45rem;
 }
 
 .match-form .button {
   grid-column: 1 / -1;
   font-size: var(--tdl-type-xs);
-  min-height: 1.65rem;
-  padding: 0.35rem 0.85rem;
+  min-height: 1.75rem;
+  padding: 0.4rem 0.9rem;
 }
 
 .match-results {

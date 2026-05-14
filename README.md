@@ -2,6 +2,8 @@
 
 Static MVP website for The Development Lab, a youth athlete development platform that connects families with training, tutoring, and mental performance support.
 
+🌐 **Live site:** [davevoyles.github.io/The-Development-Lab](https://davevoyles.github.io/The-Development-Lab/)
+
 ## Stack
 
 - React 19
@@ -35,4 +37,3 @@ https://davevoyles.github.io/The-Development-Lab/
 ```
 
 The Vite `base` path is set to `/The-Development-Lab/`. If a custom domain is added later, update `vite.config.ts` and add the required `CNAME` file.
-

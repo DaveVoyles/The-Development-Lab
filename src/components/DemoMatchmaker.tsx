@@ -164,7 +164,7 @@ export function DemoMatchmaker() {
         <div className={`match-results${hasSubmitted ? " match-results-active" : ""}`}>
           <p className="results-label">{hasSubmitted ? "Recommended matches" : "Sample recommendations"}</p>
           {matches.map((match) => (
-            <article className="match-card" key={match.id}>
+            <article className="match-card" data-cat={match.category} key={match.id}>
               <div>
                 <span className={`cat-${match.category}`}>{categoryLabels[match.category]}</span>
                 <h3>{match.name}</h3>

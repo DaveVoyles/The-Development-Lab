@@ -36,7 +36,7 @@ export function ProviderNetwork() {
       </div>
       <div className="provider-grid">
         {filteredProviders.map((provider) => (
-          <article className="provider-card" key={provider.id}>
+          <article className="provider-card" data-cat={provider.category} key={provider.id}>
             <span className={`cat-${provider.category}`}>{categoryLabels[provider.category]}</span>
             <h3>{provider.name}</h3>
             <p>{provider.location}</p>
